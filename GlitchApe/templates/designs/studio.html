@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Design Studio</h1>
-<p>Upload or generate a design via AI.</p>
-<form method="post" action="{% url 'generate_design' %}">{% csrf_token %}
-  <textarea name="prompt" placeholder="Describe your design..."></textarea>
-  <button type="submit">Generate</button>
-</form>
-{% endblock %}
