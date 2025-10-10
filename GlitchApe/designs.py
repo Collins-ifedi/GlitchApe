@@ -4,7 +4,7 @@ import logging
 from typing import Dict, List, Optional, Any
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from pydantic import BaseModel, Field, HttpUrl
+from pydantic import BaseModel, Field, HttpUrl, RootModel
 import httpx
 from sqlalchemy.ext.asyncio import AsyncSession
 from datetime import datetime
@@ -67,7 +67,8 @@ class DesignResponse(BaseModel):
 
 class MockupTemplatesResponse(BaseModel):
     """Response model for available mockup templates for a product."""
-    __root__: Dict[str, HttpUrl]
+    """__root__: Dict[str, HttpUrl]"""
+    pass
 
 
 # ===================================================================
