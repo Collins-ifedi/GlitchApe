@@ -36,6 +36,7 @@ async def startup_event():
         # recommended for production databases as it cannot handle migrations.
         # await conn.run_sync(Base.metadata.drop_all) # Optional: for clean testing
         # await conn.run_sync(Base.metadata.create_all)
+        pass
     logger.info("✅ Database tables created successfully (if they didn't exist).")
 
 async def shutdown_event():
