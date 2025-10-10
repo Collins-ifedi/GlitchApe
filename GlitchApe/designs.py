@@ -67,8 +67,7 @@ class DesignResponse(BaseModel):
 
 class MockupTemplatesResponse(BaseModel):
     """Response model for available mockup templates for a product."""
-    """__root__: Dict[str, HttpUrl]"""
-    pass
+    #__root__: Dict[str, HttpUrl]
 
 
 # ===================================================================
