@@ -54,7 +54,7 @@ app = FastAPI(
     contact={
         "name": "GlitchApe Support",
         "url": "https://x.com/GlitchApeFun",
-        "email": "support@glitchape.fun",
+        "email": "collins@glitchape.fun",
     },
 )
 
