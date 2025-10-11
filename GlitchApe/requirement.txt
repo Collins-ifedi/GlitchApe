@@ -10,7 +10,8 @@ pydantic-settings
 pydantic[email]
 greenlet
 python-jose[cryptography]
-passlib[bcrypt]
 python-multipart
 httpx
 stripe
+passlib==2.7.4
+bcrypt==4.0.1
