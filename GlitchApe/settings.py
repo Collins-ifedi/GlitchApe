@@ -40,7 +40,9 @@ class Settings(BaseSettings):
     # CORS allowed origins
     CORS_ALLOWED_ORIGINS: List[str] = [
         "https://www.glitchape.fun",
-        "https://glitchape.fun"
+        "https://glitchape.fun",
+        "https://glitchape.onrender.com",
+        "https://www.glitchape.onrender.com"
     ]
 
     class Config:
