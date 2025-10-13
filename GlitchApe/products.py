@@ -33,7 +33,7 @@ class _PrintfulPrice(BaseModel):
 class _PrintfulProduct(BaseModel):
     """Internal model to validate a single product from Printful's API."""
     id: int
-    name: str
+    name: Optional[str] = None
     type: Optional[str] = "unknown"
     # MODIFIED: Made the 'price' field optional to handle cases where the API
     # response for a product does not include pricing information.
