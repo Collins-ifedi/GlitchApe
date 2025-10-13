@@ -19,9 +19,9 @@ PRINTFUL_API_URL = "https://api.printful.com/products"
 class ProductOut(BaseModel):
     """Defines the structure of a product returned by our API."""
     id: int
-    name: str
-    category: str
-    base_price: float
+    name: Optional[str] = "unnamed product"
+    category: Optional[str] = "uncategorized"
+    base_price: Optional[float] = 0.0
 
     class Config:
         from_attributes = True
