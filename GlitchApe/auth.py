@@ -25,7 +25,7 @@ class UserCreate(BaseModel):
 
 class UserPublic(BaseModel):
     """Schema for safely exposing user data."""
-    id: int
+    id: str
     email: EmailStr
     created_at: datetime
 
