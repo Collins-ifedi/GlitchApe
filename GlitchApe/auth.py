@@ -148,7 +148,11 @@ async def register_user(
         # You will need to update referrals.py to use `async def`.
         await assign_referrer(new_user, ref, db)
 
-    return new_user
+    return {
+    "id": str(new_user.id),
+    "email": new_user.email,
+    "created_at": new_user.created_at
+    }
 
 
 @router.post("/login", response_model=Token)
