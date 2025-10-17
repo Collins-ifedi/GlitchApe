@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+asyncpg
+aiosqlite
+greenlet
+pydantic[dotenv]
+pydantic[email]
+pydantic-settings
+greenlet
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+httpx
+stripe
