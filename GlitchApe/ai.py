@@ -8,7 +8,7 @@ Handles:
 - Image uploads & PIL-based placement.
 - Temporary storage & cleanup (auto-delete after 48h)
 """
-
+import sys
 import os
 import uuid
 import shutil
@@ -27,6 +27,9 @@ from jose import jwt
 
 # Import DB and auth components from server.py
 from server import get_db, User, get_current_user, ChatSession, ChatMessage
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 # ===================================================================
 # CONFIGURATION
