@@ -1,6 +1,7 @@
 # server.py
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import uuid
 from pathlib import Path
 import logging
@@ -25,10 +26,6 @@ from sqlalchemy import (
 from sqlalchemy.dialects.postgresql import UUID as SA_UUID
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
-PROJECT_ROOT = Path(__file__).resolve().parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
 # --- Logging Configuration ---
 # Set up basic logging for production
 logging.basicConfig(
