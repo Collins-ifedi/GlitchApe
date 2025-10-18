@@ -17,6 +17,7 @@ import sys
 import os
 import uuid
 import json
+from pathlib import Path
 import httpx
 import stripe
 import asyncio
