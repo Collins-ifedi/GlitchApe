@@ -10,6 +10,7 @@ Handles:
 """
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import uuid
 import shutil
 from pathlib import Path
@@ -28,9 +29,6 @@ from jose import jwt
 
 # Import DB and auth components from server.py
 from server import get_db, User, get_current_user, ChatSession, ChatMessage
-PROJECT_ROOT = Path(__file__).resolve().parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
 
 # ===================================================================
 # CONFIGURATION
