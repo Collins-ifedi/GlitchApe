@@ -29,14 +29,14 @@ log = logging.getLogger(__name__)
 
 # Import ai router (ai.py)
 try:
-    from .ai import router as ai_router
+    from ai import router as ai_router
 except ImportError:
     log.error("CRITICAL: ai.py not found or ai_router not exposed.")
     ai_router = None
 
 # Import order router (order.py)
 try:
-    from .order import router as order_router
+    from order import router as order_router
 except ImportError:
     log.error("CRITICAL: order.py not found or order_router not exposed.")
     order_router = None
