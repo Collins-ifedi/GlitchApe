@@ -50,7 +50,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 # Initialize router and Gemini client
 # Note: server.py mounts this router at "/api", so paths will be "/api/ai/..."
 router = APIRouter(prefix="/ai", tags=["AI"])
-client = genai.Client(api_key=AI_API_KEY)
+client = genai.Client(api_key = AI_API_KEY)
 
 
 # ===================================================================
