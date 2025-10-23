@@ -669,7 +669,7 @@ async def stripe_webhook(
 @router.post("/ai/upload-image")
 async def upload_user_image(
     file: UploadFile = File(...),
-    db: AsyncSession = Depends(getdb),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
     """Handles user-uploaded images (e.g., a logo)."""
