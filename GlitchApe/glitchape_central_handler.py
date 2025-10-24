@@ -51,7 +51,7 @@ if not AI_API_KEY:
 # --- FIX: This line will now work with the correct import ---
 genai.configure(api_key=AI_API_KEY)
 # --- UPDATE: Using gemini-1.5-flash-latest as requested ---
-ai_client = genai.GenerativeModel("gemini-1.5-flash-latest")
+ai_client = genai.GenerativeModel("gemini-2.5-flash-image")
 
 # --- Printful ---
 PRINTFUL_API_KEY = os.getenv("PRINTFUL_API_KEY")
