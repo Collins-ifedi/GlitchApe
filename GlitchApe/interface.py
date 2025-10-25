@@ -209,6 +209,10 @@ class ChatSession(Base):
     id = Column(SA_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id = Column(SA_UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
     title = Column(String(255), default="New Chat")
+    
+    # --- FIX: ADDED THE MISSING STATE COLUMN ---
+    state = Column(String(50), nullable=False, default="designing", index=True)
+    
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     
     user = relationship("User", back_populates="sessions")
