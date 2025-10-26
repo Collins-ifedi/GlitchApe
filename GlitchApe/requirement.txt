@@ -8,7 +8,6 @@ greenlet
 pydantic[dotenv]
 pydantic[email]
 pydantic-settings
-base64
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
@@ -19,4 +18,4 @@ google-genai
 scrypt
 pillow
 google.generativeai
-io
+request
