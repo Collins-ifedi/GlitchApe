@@ -18,4 +18,3 @@ google-genai
 scrypt
 pillow
 google.generativeai
-base64
