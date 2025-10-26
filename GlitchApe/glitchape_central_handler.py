@@ -58,7 +58,7 @@ LLAMA_API_KEY = os.getenv("LLAMA_API_KEY")
 if not LLAMA_API_KEY:
     raise RuntimeError("LLAMA_API_KEY environment variable not set")
 LLAMA_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-LLAMA_MODEL = "meta-llama/llama-4-marvick" # Using LLaMA 4 Marvick as requested
+LLAMA_MODEL = "meta-llama/llama-4-marvrick" # Using LLaMA 4 Marvick as requested
 
 # --- NEW: Stable Diffusion (HuggingFace) Configuration ---
 HF_API_KEY = os.getenv("HF_API_KEY")
