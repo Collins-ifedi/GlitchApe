@@ -24,7 +24,7 @@ from fastapi import (
     UploadFile, File, Form, status
 )
 from fastapi.responses import FileResponse
-from pantic import BaseModel
+from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from PIL import Image
