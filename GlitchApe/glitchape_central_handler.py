@@ -640,7 +640,7 @@ class GlitchApeCentralHandler:
         
         try:
             # Pass the *newly generated URL* to the LLaMA brain
-            action_json = await _call_llama_brain(prompt, history, uploaded_image_url)
+            action_json = await self._call_llama_brain(prompt, history, uploaded_image_url)
         except HTTPException as e:
             # If LLaMA fails, return a simple error message
             ai_text_response = f"Sorry, my AI brain had a glitch... ({e.detail}). Can you try that again?"
