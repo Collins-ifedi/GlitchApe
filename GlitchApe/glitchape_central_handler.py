@@ -566,7 +566,7 @@ class GlitchApeCentralHandler:
         payload = {
             "model": LLAMA_MODEL,
             "messages": messages,
-            "response_format": {"type": "json_object"} # Request JSON output
+            
         }
 
         try:
