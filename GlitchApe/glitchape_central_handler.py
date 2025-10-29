@@ -68,7 +68,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 LLAMA_API_KEY = os.getenv("LLAMA_API_KEY")
 if not LLAMA_API_KEY: log.critical("LLAMA_API_KEY not set."); raise RuntimeError("LLAMA_API_KEY not set")
 LLAMA_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-LLAMA_MODEL = "meta-llama/llama-4-marvick"
+LLAMA_MODEL = "meta-llama/llama-4-maverick:free"
 LLAMA_TIMEOUT = 60 # Seconds
 
 # --- Gemini Vision Model (Google) Configuration ---
