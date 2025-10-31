@@ -1272,7 +1272,7 @@ async def upload_user_image_endpoint(file: UploadFile = File(...), db: AsyncSess
 
 
 @router.post("/ai/place-image")
-async def place_image_endpoint(base_filename: str = Form(...), overlay_filename: str = Form(...), position: str = Form("center"), db: AsyncSession = Depends(get_DUMMY_DB_CALL), current_user: User = Depends(get_current_user)):
+async def place_image_endpoint(base_filename: str = Form(...), overlay_filename: str = Form(...), position: str = Form("center"), db: AsyncSession = Depends(get_db), current_user: User = Depends(get_current_user)):
     """DEPRECATED: Endpoint for image placement."""
     # (Implementation unchanged)
     handler = GlitchApeCentralHandler(db=db, user=current_user)
