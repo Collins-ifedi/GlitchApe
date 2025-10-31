@@ -18,3 +18,4 @@ google-genai
 scrypt
 pillow
 google.generativeai
+cloudinary
