@@ -1517,8 +1517,8 @@ class GlitchApeCentralHandler:
 # ===================================================================
 # FASTAPI ROUTER (Wrappers)
 # ===================================================================
-router = APIRouter(tags=["GlitchApe Central"])
 
+router = APIRouter(prefix="/api/ai", tags=["ai"])
 @router.post("/chat/start", status_code=status.HTTP_201_CREATED)
 async def start_new_chat_session(db: AsyncSession = Depends(get_db), current_user: User = Depends(get_current_user)):
     """Starts a new chat session."""
