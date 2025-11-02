@@ -19,4 +19,4 @@ scrypt
 pillow
 google.generativeai
 cloudinary
-re
+python-dotenv
