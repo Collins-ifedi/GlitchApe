@@ -19,3 +19,4 @@ scrypt
 pillow
 google.generativeai
 cloudinary
+re
