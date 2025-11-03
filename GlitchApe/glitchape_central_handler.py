@@ -1066,7 +1066,7 @@ async def send_chat_message_endpoint(
     current_user: User = Depends(get_current_user)
 ) -> Dict[str, Any]:
     
-      try:
+     try:
         session_uuid = uuid.UUID(session_id)
     except ValueError:
         raise HTTPException(status_code=400, detail="Invalid session_id format.")
