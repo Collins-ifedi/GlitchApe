@@ -19,3 +19,4 @@ scrypt
 pillow
 cloudinary
 python-dotenv
+google-api-core
