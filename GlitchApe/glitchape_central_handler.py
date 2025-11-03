@@ -1116,4 +1116,4 @@ async def stripe_webhook_endpoint(request: Request, db: AsyncSession = Depends(g
     handler = GlitchApeCentralHandler(db=db)
     payload = await request.body()
     sig_header = request.headers.get("stripe-signature")
-    return await handler.handle_stripe_webhook(payload, sig_header)3
+    return await handler.handle_stripe_webhook(payload, sig_header)
