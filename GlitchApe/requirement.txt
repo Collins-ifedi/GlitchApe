@@ -17,6 +17,5 @@ sqlalchemy[asyncio]
 google-genai
 scrypt
 pillow
-google.generativeai
 cloudinary
 python-dotenv
