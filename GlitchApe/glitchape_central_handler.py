@@ -1068,7 +1068,7 @@ async def send_chat_message_endpoint(
     
      try:
         session_uuid = uuid.UUID(session_id)
-      except ValueError:
+     except ValueError:
         raise HTTPException(status_code=400, detail="Invalid session_id format.")
     """Sends a message to the AI handler."""
     handler = GlitchApeCentralHandler(db=db, user=current_user)
