@@ -1199,7 +1199,7 @@ class GlitchApeCentralHandler:
             action_json = json.loads(json_match.group(0))
             return action_json
 
-        except google_api_core_exceptions.ResourceExhaustedError: # <--- FIX: Use generalized import reference
+        except google_api_core_exceptions.ResourceExhausted: # <--- FIX: Use generalized import reference
              log.error("Gemini Resource Exhausted Error.")
              raise HTTPException(503, "AI capacity exceeded. Please try again in a few moments.")
         except GenAI_APIError as e: # <-- MODIFIED
