@@ -49,7 +49,7 @@ from dotenv import load_dotenv
 # from google.api_core import exceptions as google_exceptions
 
 from fastapi import (
-    APRouter, Depends, HTTPException, Request,
+    APIRouter, Depends, HTTPException, Request,
     UploadFile, File, Form, status
 )
 # --- MODIFIED: Import Starlette's UploadFile for robust type checking ---
