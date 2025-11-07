@@ -127,8 +127,8 @@ except Exception as e:
 # --- LLaMA/Gemini-2.5-Flash (OpenRouter) Configuration ---
 LLAMA_API_KEY = os.getenv("LLAMA_API_KEY")
 if not LLAMA_API_KEY: log.critical("LLAMA_API_KEY not set."); raise RuntimeError("LLAMA_API_KEY not set")
-LLAMA_API_URL = "https://api.aimlapi.com/v1"
-LLAMA_MODEL = "alibaba/Qwen3 VL 32B Instruct" # Use this model for all requests
+LLAMA_API_URL = "https://openrouter.ai/api/v1/chat/completions"
+LLAMA_MODEL = "openrouter/polaris-alpha" # Use this model for all requests
 LLAMA_TIMEOUT = 60 # Seconds
 # --- ADDED: Robust Referer for OpenRouter free models (Addresses 403 Error) ---
 LLAMA_HTTP_REFERER = os.getenv("APP_DOMAIN", "https://glitchape.fun")
