@@ -1,4 +1,4 @@
-7# glitchape_central_handler.py
+# glitchape_central_handler.py
 """
 Central Brain and API Orchestrator for GlitchApe.
 
@@ -149,7 +149,7 @@ LLAMA_HTTP_REFERER = os.getenv("APP_DOMAIN", "https://glitchape.fun")
 # --- Stable Diffusion (HuggingFace) Configuration ---
 HF_API_KEY = os.getenv("HF_API_KEY")
 if not HF_API_KEY: log.critical("HF_API_KEY not set."); raise RuntimeError("HF_API_KEY not set")
-HF_API_URL = "https://router.huggingface.co/models/stabilityai/stable-diffusion-3.5-large"
+HF_API_URL = "https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-3.5-large"
 HF_HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 HF_TIMEOUT = 120 # Seconds
 
